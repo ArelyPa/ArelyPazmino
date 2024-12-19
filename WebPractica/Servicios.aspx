@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Servicios" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Servicios.aspx.cs" Inherits="Servicios" %>
+﻿   <%@ Page Title="Servicios" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Servicios.aspx.cs" Inherits="Servicios" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container mt-4">
@@ -11,7 +11,8 @@
                 <p class="text-danger"><em>Descubre lo que tenemos para ti.</em></p>
             </div>
             <div class="col-md-6">
-                <img src="~/images/servicios.jpg" alt="Nuestros Servicios" class="img-fluid rounded shadow-lg"/>
+                <!-- Imagen con URL externa -->
+                <img src="https://images.unsplash.com/photo-1587638412833-52f2c2d22f68" alt="Nuestros Servicios" class="img-fluid rounded shadow-lg"/>
             </div>
         </div>
         

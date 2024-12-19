@@ -7,7 +7,7 @@
         
         <div class="row">
             <div class="col-md-6">
-                <img src="~/images/nosotros.jpg" alt="Nuestro equipo" class="img-fluid rounded shadow-lg"/>
+                <img src="https://images.unsplash.com/photo-1531470801720-9cb5ea5ac8da" alt="Nuestro equipo" class="img-fluid rounded shadow-lg"/>
             </div>
             <div class="col-md-6">
                 <p><strong>Bienvenido a la página de nosotros.</strong> Aquí puedes encontrar información sobre la misión, visión y valores de nuestra empresa.</p>
@@ -17,4 +17,6 @@
         </div>
     </div>
 </asp:Content>
+
+
 

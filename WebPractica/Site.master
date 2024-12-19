@@ -4,10 +4,10 @@
 
 <html lang="es">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
+    <title><%: Page.Title %> - TecnoSoluciones</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -15,6 +15,35 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <!-- Estilos personalizados -->
+    <style>
+        .hero-section {
+            background-color: #2a9d8f; /* Verde menta */
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+        }
+        .hero-section p {
+            font-size: 1.25em;
+            font-weight: normal;
+            margin-top: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .navbar-nav {
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -46,11 +75,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Nombre de la aplicación</a>
+                    <a class="navbar-brand" runat="server" href="~/">TecnoSoluciones</a> 
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
                         <li><a runat="server" href="~/Nosotros">Nosotros</a></li>
                         <li><a runat="server" href="~/Servicios">Servicios</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
@@ -74,14 +102,26 @@
                 </div>
             </div>
         </div>
+
+        <div class="hero-section">
+            <h1>Bienvenido a TecnoSoluciones</h1>
+            <p>En <strong>TecnoSoluciones</strong> ofrecemos soluciones tecnológicas innovadoras que impulsan el crecimiento y la productividad de las empresas. Explora nuestros servicios y descubre cómo podemos ayudarte a alcanzar tus objetivos.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="https://blog.maestriasydiplomados.tec.mx/hs-fs/hubfs/Blog%20notas%20maestrias%20y%20diplomados/Innovaci%C3%B3n%20tecnol%C3%B3gica%202.jpg?width=500&height=250&name=Innovaci%C3%B3n%20tecnol%C3%B3gica%202.jpg" alt="Imagen de referencia">
+        </div>
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+                <p>&copy; <%: DateTime.Now.Year %> - TecnoSoluciones</p>
             </footer>
         </div>
     </form>
 </body>
 </html>
+
+
